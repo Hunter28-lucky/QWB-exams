@@ -25,9 +25,11 @@ const Header: React.FC = () => {
         {/* Main Header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between py-4">
           <div className="flex items-center space-x-3 mb-3 md:mb-0">
-            <div className="bg-orange-600 p-2 rounded-lg">
-              <BookOpen className="w-6 h-6 md:w-8 md:h-8 text-white" />
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="JUT Official Hub Logo" 
+              className="w-10 h-10 md:w-12 md:h-12 rounded-lg shadow-sm"
+            />
             <div>
               <h1 className="text-xl md:text-2xl font-bold text-gray-800">JUT Official Hub</h1>
               <p className="text-xs md:text-sm text-gray-600">Jharkhand University of Technology</p>

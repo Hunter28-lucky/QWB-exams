@@ -14,11 +14,34 @@ Official Portal for Examination Materials & Important Questions for Jharkhand Un
 
 ### Vercel Deployment
 
-1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
-2. Go to [vercel.com](https://vercel.com) and sign up/login
-3. Click "New Project" and import your repository
+#### Step 1: Prepare Your Repository
+1. Create a new repository on GitHub
+2. Push your code to the repository:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/yourusername/jut-official-hub.git
+   git push -u origin main
+   ```
+
+#### Step 2: Deploy on Vercel
+1. Go to [vercel.com](https://vercel.com) and sign up/login with GitHub
+2. Click "New Project" or "Add New..." → "Project"
+3. Import your repository from the list
 4. Vercel will automatically detect it's a Vite project
-5. Deploy with default settings
+5. Click "Deploy" - no additional configuration needed!
+
+#### Step 3: Verify Deployment
+- Vercel will provide a live URL (e.g., `your-project.vercel.app`)
+- The payment API will work automatically through the configured proxy
+- Mobile optimization is fully functional
+
+#### Optional: Custom Domain
+1. In your Vercel dashboard, go to your project
+2. Click "Settings" → "Domains"
+3. Add your custom domain and follow DNS instructions
 
 ### Local Development
 

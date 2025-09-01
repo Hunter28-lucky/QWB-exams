@@ -101,6 +101,29 @@ const PaymentModal: React.FC<PaymentModalProps> = ({
           {/* Payment Status */}
           {paymentStatus === 'idle' && (
             <div className="text-center">
+              {/* Payment Instructions */}
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 text-left">
+                <h4 className="font-semibold text-blue-800 mb-3 text-center">💳 Payment Instructions</h4>
+                <div className="space-y-2 text-sm text-blue-700">
+                  <div className="flex items-start">
+                    <span className="bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">1</span>
+                    <span>Click "Proceed to Payment" button below</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">2</span>
+                    <span>Scan the QR code or take screenshot and scan from your payment app</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">3</span>
+                    <span>Complete payment using UPI, Net Banking, or Card</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">4</span>
+                    <span>Download materials instantly after successful payment</span>
+                  </div>
+                </div>
+              </div>
+              
               <CreditCard className="w-12 h-12 text-blue-600 mx-auto mb-4" />
               <p className="text-gray-600 mb-6">
                 Click the button below to proceed with secure payment
