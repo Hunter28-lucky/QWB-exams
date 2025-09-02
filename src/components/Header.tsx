@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <header className="bg-white shadow-md border-b-4 border-orange-600">
       <div className="container mx-auto px-4">
         {/* Top Bar */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center py-2 text-xs border-b border-gray-200">
+        <div className="hidden md:flex md:justify-between md:items-center py-2 text-xs border-b border-gray-200">
           <div className="flex flex-col md:flex-row md:items-center md:space-x-4 text-gray-600 mb-1 md:mb-0">
             <div className="flex items-center">
               <Phone className="w-4 h-4 mr-1" />
