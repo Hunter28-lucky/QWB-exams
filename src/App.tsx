@@ -191,7 +191,7 @@ function App() {
           {/* Logo and Title */}
           <div className="flex items-center justify-center space-x-3 mb-4">
             <img 
-              src="/ashoka-logo.png" 
+              src="/image copy copy.png" 
               alt="Government of India Emblem" 
               className="w-12 h-12 object-contain"
               loading="lazy"

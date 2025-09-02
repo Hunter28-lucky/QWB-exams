@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between py-3 md:py-4">
           <div className="flex items-center space-x-3 mb-3 md:mb-0">
             <img 
-              src="/ashoka-logo.png" 
+              src="/image copy copy.png" 
               alt="JUT Official Hub Logo" 
               className="w-8 h-8 md:w-12 md:h-12 object-contain"
               loading="eager"
