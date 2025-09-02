@@ -102,25 +102,43 @@ const PaymentModal: React.FC<PaymentModalProps> = ({
           {paymentStatus === 'idle' && (
             <div className="text-center">
               {/* Payment Instructions */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 text-left">
-                <h4 className="font-semibold text-blue-800 mb-3 text-center">💳 Payment Instructions</h4>
-                <div className="space-y-2 text-sm text-blue-700">
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-4 mb-6 text-left">
+                <h4 className="font-semibold text-blue-800 mb-3 text-center">💳 How to Complete Payment</h4>
+                <div className="space-y-3 text-sm text-blue-700">
                   <div className="flex items-start">
                     <span className="bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">1</span>
-                    <span>Click "Proceed to Payment" button below</span>
+                    <span>Click "Proceed to Payment" to open payment page</span>
                   </div>
                   <div className="flex items-start">
                     <span className="bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">2</span>
-                    <span>Scan the QR code or take screenshot and scan from your payment app</span>
+                    <div>
+                      <span className="font-semibold">📱 Mobile Payment:</span>
+                      <div className="ml-2 mt-1 text-xs">
+                        • Scan the QR code directly with your camera<br/>
+                        • Or take screenshot and scan from payment app<br/>
+                        • Use PhonePe, Google Pay, Paytm, or any UPI app
+                      </div>
+                    </div>
                   </div>
                   <div className="flex items-start">
                     <span className="bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">3</span>
-                    <span>Complete payment using UPI, Net Banking, or Card</span>
+                    <span>Complete payment using UPI, Net Banking, Debit/Credit Card</span>
                   </div>
                   <div className="flex items-start">
                     <span className="bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">4</span>
-                    <span>Download materials instantly after successful payment</span>
+                    <span>📥 Download your study materials instantly after payment confirmation</span>
                   </div>
+                </div>
+                
+                {/* QR Code Tip */}
+                <div className="mt-4 p-3 bg-white border border-blue-300 rounded-lg">
+                  <div className="flex items-center text-blue-800">
+                    <span className="text-lg mr-2">💡</span>
+                    <span className="font-semibold text-sm">Quick Tip:</span>
+                  </div>
+                  <p className="text-xs text-blue-700 mt-1">
+                    On mobile: Long press the QR code → Save Image → Open your payment app → Scan from gallery
+                  </p>
                 </div>
               </div>
               
