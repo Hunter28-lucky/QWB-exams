@@ -150,7 +150,7 @@ const PackageSelector: React.FC<PackageSelectorProps> = ({
           onClick={() => onPurchase(sureQuestionPackage)}
           className="w-full bg-red-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-red-700 transition-colors text-sm"
         >
-          🎯 Get Sure Questions - ₹{sureQuestions * 50}
+          🎯 Get Sure Questions - ₹{sureQuestions * 100}
         </button>
       </div>
     </div>
