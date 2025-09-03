@@ -50,7 +50,7 @@ const PackageSelector: React.FC<PackageSelectorProps> = ({
     price: sureQuestions * 50,
     description: `${sureQuestions} confirmed guess question${sureQuestions > 1 ? 's' : ''} - 70% guarantee`,
     features: [
-      `🔥 ${sureQuestions} sure question${sureQuestions > 1 ? 's' : ''}`,
+      `🔥 ${sureQuestions} sure guess question${sureQuestions > 1 ? 's' : ''}`,
       '💯 70% guarantee',
       '📋 Exact format',
       '✍️ Model answers',
