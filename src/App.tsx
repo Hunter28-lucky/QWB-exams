@@ -175,8 +175,9 @@ function App() {
                   📢 Official Notice
                 </h3>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  This portal provides authentic study materials and important questions for JUT students. 
-                  All content is prepared following university guidelines and examination patterns. 
+                  QWB – Question Wala Bank
+                  This portal provides authentic study materials and important questions for students.
+                  All content is prepared following university guidelines and examination patterns.
                   For any queries, contact the academic office.
                 </p>
               </div>
