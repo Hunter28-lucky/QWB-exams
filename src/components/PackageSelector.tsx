@@ -18,9 +18,9 @@ const PackageSelector: React.FC<PackageSelectorProps> = ({
       id: 'complete-paper',
       name: 'Complete Question Paper',
       price: 299,
-      description: 'Complete examination paper with all sections',
+      description: 'Complete examination Guess paper with all sections',
       features: [
-        '📄 Complete question paper',
+        '📄 Complete guess question paper',
         '✅ All sections included',
         '📝 Detailed solutions',
         '📊 Marking scheme',
@@ -46,7 +46,7 @@ const PackageSelector: React.FC<PackageSelectorProps> = ({
 
   const sureQuestionPackage: Package = {
     id: 'sure-questions',
-    name: 'Sure Questions',
+    name: 'Sure guess Questions',
     price: sureQuestions * 50,
     description: `${sureQuestions} confirmed question${sureQuestions > 1 ? 's' : ''} - 100% guarantee`,
     features: [
