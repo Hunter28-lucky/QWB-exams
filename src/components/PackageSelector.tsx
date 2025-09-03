@@ -47,7 +47,7 @@ const PackageSelector: React.FC<PackageSelectorProps> = ({
   const sureQuestionPackage: Package = {
     id: 'sure-questions',
     name: 'Sure guess Questions',
-    price: sureQuestions * 50,
+    price: sureQuestions * 100,
     description: `${sureQuestions} confirmed guess question${sureQuestions > 1 ? 's' : ''} - 70% guarantee`,
     features: [
       `🔥 ${sureQuestions} sure guess question${sureQuestions > 1 ? 's' : ''}`,
