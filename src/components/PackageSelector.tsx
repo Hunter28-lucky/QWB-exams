@@ -104,10 +104,10 @@ const PackageSelector: React.FC<PackageSelectorProps> = ({
       <div className="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200 rounded-lg p-4">
         <div className="text-center mb-4">
           <div className="inline-flex items-center bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold mb-2">
-            🔥 PREMIUM GUARANTEE
+            🔥 PREMIUM guess GUARANTEE
           </div>
-          <h4 className="text-lg font-bold text-gray-800">Sure Questions</h4>
-          <p className="text-sm text-red-600 font-medium">100% Confirmed Questions</p>
+          <h4 className="text-lg font-bold text-gray-800">Sure guess Questions</h4>
+          <p className="text-sm text-red-600 font-medium">70% Confirmed Questions</p>
         </div>
         
         <div className="mb-4">
