@@ -133,7 +133,7 @@ const PackageSelector: React.FC<PackageSelectorProps> = ({
         <div className="bg-white rounded-lg p-3 mb-4 border border-red-200">
           <div className="flex justify-between items-center mb-2">
             <span className="font-semibold text-gray-800 text-sm">Total Amount:</span>
-            <span className="text-xl font-bold text-red-600">₹{sureQuestions * 50}</span>
+            <span className="text-xl font-bold text-red-600">₹{sureQuestions * 100}</span>
           </div>
           <p className="text-xs text-gray-600">{sureQuestionPackage.description}</p>
         </div>
