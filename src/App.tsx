@@ -211,15 +211,7 @@ function App() {
             <a href="#" className="text-center py-2 px-3 bg-gray-50 rounded-lg text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
               About
             </a>
-            <a 
-              href="https://wa.me/918797903378?text=Hello%2C%20I%20need%20help%20with%20study%20materials" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-center py-2 px-3 bg-green-50 rounded-lg text-sm font-medium text-green-700 hover:bg-green-100 transition-colors flex items-center justify-center"
-            >
-              <MessageCircle className="w-4 h-4 mr-1" />
-              WhatsApp
-            </a>
+          
             <a href="#" className="text-center py-2 px-3 bg-gray-50 rounded-lg text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
               Support
             </a>
