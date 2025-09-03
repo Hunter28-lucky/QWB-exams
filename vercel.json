@@ -8,7 +8,7 @@
   "redirects": [
     {
       "source": "/contact",
-      "destination": "https://wa.me/918797903378?text=Hello%2C%20I%20need%20help%20with%20JUT%20study%20materials",
+      "destination": "https://wa.me/918797903378?text=Hello%2C%20I%20need%20help%20with%20study%20materials",
       "permanent": false
     }
   ],

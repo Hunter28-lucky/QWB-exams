@@ -62,13 +62,13 @@ function App() {
             </div>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
-            JUT Official Hub
+            QWB Question Wala Bank
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto px-4">
-            Official Portal for Examination Materials & Important Questions
+            Your Trusted Source for Question Papers & Study Materials
           </p>
           <div className="mt-3 text-sm text-orange-600 font-medium">
-            Jharkhand University of Technology (JUT)
+            Quality Questions • Verified Content • Instant Access
           </div>
         </div>
 
@@ -192,13 +192,13 @@ function App() {
           <div className="flex items-center justify-center space-x-3 mb-4">
             <img 
               src="/image copy copy.png" 
-              alt="Government of India Emblem" 
+              alt="QWB Question Wala Bank Logo" 
               className="w-12 h-12 object-contain"
               loading="lazy"
             />
             <div className="text-center">
-              <h3 className="text-lg font-bold text-gray-800">JUT Official Hub</h3>
-              <p className="text-xs text-gray-600">Jharkhand University of Technology</p>
+              <h3 className="text-lg font-bold text-gray-800">QWB Question Wala Bank</h3>
+              <p className="text-xs text-gray-600">Your Trusted Question Bank</p>
             </div>
           </div>
           
@@ -211,7 +211,7 @@ function App() {
               About
             </a>
             <a 
-              href="https://wa.me/918797903378?text=Hello%2C%20I%20need%20help%20with%20JUT%20study%20materials" 
+              href="https://wa.me/918797903378?text=Hello%2C%20I%20need%20help%20with%20study%20materials" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-center py-2 px-3 bg-green-50 rounded-lg text-sm font-medium text-green-700 hover:bg-green-100 transition-colors flex items-center justify-center"
@@ -224,22 +224,10 @@ function App() {
             </a>
           </nav>
           
-          {/* Contact Info */}
-          <div className="border-t border-gray-200 pt-4 space-y-2">
-            <div className="flex items-center justify-center text-sm text-gray-600">
-              <Phone className="w-4 h-4 mr-2" />
-              <a href="tel:+918797903378" className="hover:text-orange-600 transition-colors">
-                +91 87979 03378
-              </a>
-            </div>
-            <div className="flex items-center justify-center text-sm text-gray-600">
-              <Mail className="w-4 h-4 mr-2" />
-              <a href="mailto:info@jutofficialhub.edu.in" className="hover:text-orange-600 transition-colors">
-                info@jutofficialhub.edu.in
-              </a>
-            </div>
-            <div className="text-center text-xs text-gray-500 mt-3">
-              🏛️ Government of Jharkhand | Official Portal
+          {/* Brand Info */}
+          <div className="border-t border-gray-200 pt-4">
+            <div className="text-center text-xs text-gray-500">
+              📚 QWB Question Wala Bank - Your Trusted Study Partner
             </div>
           </div>
         </div>

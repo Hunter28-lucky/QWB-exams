@@ -1,6 +1,6 @@
-# JUT Official Hub
+# QWB Question Wala Bank
 
-Official Portal for Examination Materials & Important Questions for Jharkhand University of Technology (JUT).
+Your Trusted Source for Question Papers & Study Materials
 
 ## Features
 
