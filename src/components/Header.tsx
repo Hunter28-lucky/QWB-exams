@@ -24,15 +24,7 @@ const Header: React.FC = () => {
             <nav className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Home</a>
               <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">About</a>
-              <a 
-                href="https://wa.me/918797903378?text=Hello%2C%20I%20need%20help%20with%20JUT%20study%20materials" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-orange-600 font-medium flex items-center"
-              >
-                <MessageCircle className="w-4 h-4 mr-1" />
-                Contact
-              </a>
+          
               <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Support</a>
             </nav>
           </div>
