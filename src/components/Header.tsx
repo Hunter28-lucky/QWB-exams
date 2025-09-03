@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between py-3 md:py-4">
           <div className="flex items-center space-x-3 mb-3 md:mb-0">
             <img 
-              src="/image copy copy.png" 
+              src="ChatGPT Image Sep 3, 2025, 10_55_13 AM.png" 
               alt="QWB Question Wala Bank Logo" 
               className="w-8 h-8 md:w-12 md:h-12 object-contain"
               loading="eager"
