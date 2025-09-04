@@ -8,7 +8,17 @@
   "redirects": [
     {
       "source": "/contact",
-      "destination": "https://wa.me/918797903378?text=Hello%2C%20I%20need%20help%20with%20study%20materials",
+      "destination": "https://wa.me/8797903378?text=Hello%2C%20I%20need%20help%20with%20study%20materials",
+      "permanent": false
+    },
+    {
+      "source": "/whatsapp",
+      "destination": "https://wa.me/8797903378?text=Hello%2C%20I%20need%20help%20with%20study%20materials",
+      "permanent": false
+    },
+    {
+      "source": "/support",
+      "destination": "https://wa.me/8797903378?text=Hello%2C%20I%20need%20support%20with%20QWB%20Question%20Bank",
       "permanent": false
     }
   ],
@@ -29,6 +39,64 @@
           "value": "Content-Type, Authorization"
         }
       ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
     }
-  ]
+  ],
+  "functions": {
+    "app/api/**/*.js": {
+      "maxDuration": 30
+    }
+  },
+  "regions": ["bom1"],
+  "framework": "vite"
 }

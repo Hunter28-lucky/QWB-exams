@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <url>
+    <loc>https://qwb-question-bank.vercel.app/</loc>
+    <image:image>
+      <image:loc>https://qwb-question-bank.vercel.app/image%20copy%20copy.png</image:loc>
+      <image:title>QWB Question Wala Bank - Question Papers and Study Materials</image:title>
+      <image:caption>Premium quality question papers and study materials for engineering students</image:caption>
+    </image:image>
+  </url>
+  
+</urlset>

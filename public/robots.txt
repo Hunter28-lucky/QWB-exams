@@ -1,4 +1,70 @@
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
-Sitemap: https://jutofficialhub.vercel.app/sitemap.xml
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# Disallow AI training bots
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Sitemaps
+Sitemap: https://qwb-question-bank.vercel.app/sitemap.xml
+Sitemap: https://qwb-question-bank.vercel.app/sitemap-news.xml
+Sitemap: https://qwb-question-bank.vercel.app/sitemap-images.xml
+
+# Host
+Host: https://qwb-question-bank.vercel.app
