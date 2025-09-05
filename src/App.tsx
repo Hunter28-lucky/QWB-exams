@@ -89,7 +89,7 @@ function App() {
               <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-8 text-sm md:text-base">
                 <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="font-semibold text-gray-800">Premium Quality</span>
+                  <span className="font-semibold text-gray-800">Premium Quality Using AI </span>
                 </div>
                 <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm">
                   <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
