@@ -82,7 +82,7 @@ function App() {
               
               {/* Subtitle */}
               <p className="text-xl md:text-2xl text-gray-700 mb-4 font-medium leading-relaxed">
-                Your Trusted Source for Premium Guess Papers & Study Materials
+                Your Trusted Source for AI Premium Guess Papers & Study Materials
               </p>
               
               {/* Trust Indicators */}
