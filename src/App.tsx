@@ -115,7 +115,7 @@ function App() {
                 </div>
                 <div className="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <TrendingUp className="w-8 h-8 text-green-600 mx-auto mb-3" />
-                  <div className="text-2xl font-bold text-gray-900 mb-1">98%</div>
+                  <div className="text-2xl font-bold text-gray-900 mb-1">70%</div>
                   <p className="text-gray-600 font-medium">Success Rate</p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ function App() {
                   <Star className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-800 mb-2 text-lg">High Accuracy</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">70% accuracy guarantee based on expert analysis</p>
+                <p className="text-gray-600 text-sm leading-relaxed">70% accuracy guarantee based on AI expert analysis</p>
               </div>
               
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/50 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
