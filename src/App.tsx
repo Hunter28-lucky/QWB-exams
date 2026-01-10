@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { GraduationCap, FileText, Shield, Star, CheckCircle, ChevronDown, MessageCircle, TrendingUp, Users, Award } from 'lucide-react';
+=======
+import { useState, useEffect } from 'react';
+import { GraduationCap } from 'lucide-react';
+>>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
 import Header from './components/Header';
 import PackageSelector from './components/PackageSelector';
 import PaymentModal from './components/PaymentModal';
+import TermsModal from './components/TermsModal';
+import LegalPage from './components/LegalPage';
 
 export interface Package {
   id: string;
   name: string;
   price: number;
+  originalPrice?: number;
   description: string;
   features: string[];
 }
@@ -17,10 +25,41 @@ function App() {
   const [selectedBranch, setSelectedBranch] = useState<string>('');
   const [selectedPackage, setSelectedPackage] = useState<Package | null>(null);
   const [showPayment, setShowPayment] = useState(false);
+<<<<<<< HEAD
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
+=======
+  const [showTerms, setShowTerms] = useState(false);
+  const [showLegal, setShowLegal] = useState(false);
+  const [liveViewers, setLiveViewers] = useState(3); // Dynamic viewer count
+
+  useEffect(() => {
+    const termsAccepted = localStorage.getItem('qwb_terms_accepted');
+    if (!termsAccepted) {
+      setShowTerms(true);
+    }
+  }, []);
+
+  // Randomize live viewer count every 3-6 seconds
+  useEffect(() => {
+    const updateViewers = () => {
+      const newCount = Math.floor(Math.random() * 6) + 2; // Random 2-7
+      setLiveViewers(newCount);
+    };
+
+    const scheduleNextUpdate = () => {
+      const interval = Math.random() * 3000 + 3000; // Random 3-6 seconds
+      return setTimeout(() => {
+        updateViewers();
+        scheduleNextUpdate();
+      }, interval);
+    };
+
+    const timer = scheduleNextUpdate();
+    return () => clearTimeout(timer);
+>>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
   }, []);
 
   const semesters = [
@@ -54,7 +93,21 @@ function App() {
     setSelectedPackage(null);
   };
 
+  const handleTermsAccept = () => {
+    localStorage.setItem('qwb_terms_accepted', 'true');
+    setShowTerms(false);
+  };
+
+  const handleLegalClick = () => {
+    setShowLegal(true);
+  };
+
+  const handleLegalClose = () => {
+    setShowLegal(false);
+  };
+
   return (
+<<<<<<< HEAD
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/20">
       <Header />
       
@@ -251,10 +304,150 @@ function App() {
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/50 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <FileText className="w-8 h-8 text-white" />
+=======
+    <div className="min-h-screen bg-gray-50">
+      <Header onLegalClick={handleLegalClick} />
+
+      <main className="container mx-auto px-3 py-4 max-w-2xl pb-6">
+        {/* Urgent Banner - Green for Success/Money Confidence */}
+        <div className="bg-gradient-to-r from-green-600 via-green-600 to-emerald-600 text-white px-4 py-2.5 rounded-lg mb-4 shadow-lg">
+          <div className="flex items-center justify-between text-sm">
+            <span className="font-semibold">✅ Exam Season Special Offer</span>
+            <span className="text-xs bg-white text-green-700 px-2.5 py-1 rounded-full font-bold shadow-sm">Limited Period</span>
+          </div>
+        </div>
+
+        {/* Hero Section */}
+        <div className="bg-white rounded-xl shadow-lg p-4 mb-4 border-t-4 border-orange-500">
+          <div className="text-center mb-3">
+            <div className="flex items-center justify-center mb-2">
+              <div className="bg-orange-500 p-2 rounded-full">
+                <GraduationCap className="w-6 h-6 text-white" />
+              </div>
+            </div>
+            <h1 className="text-xl font-bold text-gray-800 mb-1">
+              Padhlo Aur Pass Ho Jaao! 📚
+            </h1>
+            <p className="text-sm text-gray-600 mb-2">
+              Guess Papers Jo Exam Mein Aate Hain
+            </p>
+
+            <div className="flex items-center justify-center space-x-2 text-xs text-orange-600 font-semibold">
+              <span>⭐ 4.8/5 Rating</span>
+              <span>•</span>
+              <span>50,000+ Students</span>
+            </div>
+          </div>
+
+          {/* Trust Badges */}
+          <div className="grid grid-cols-3 gap-2 mb-3">
+            <div className="bg-green-50 p-2 rounded-lg text-center border border-green-200">
+              <div className="text-lg">✓</div>
+              <p className="text-xs font-semibold text-green-800">Exam Pattern Match</p>
+            </div>
+            <div className="bg-blue-50 p-2 rounded-lg text-center border border-blue-200">
+              <div className="text-lg">₹</div>
+              <p className="text-xs font-semibold text-blue-800">Sabse Sasta</p>
+            </div>
+            <div className="bg-purple-50 p-2 rounded-lg text-center border border-purple-200">
+              <div className="text-lg">⚡</div>
+              <p className="text-xs font-semibold text-purple-800">Instant PDF</p>
+            </div>
+          </div>
+
+          {/* Trust Statement */}
+          <div className="bg-gradient-to-r from-orange-50 to-yellow-50 border-l-4 border-orange-500 p-4 rounded-r-lg">
+            <p className="text-sm text-blue-900 font-bold text-center">
+              ✓ University Pattern Based Questions
+            </p>
+            <p className="text-xs text-blue-700 text-center mt-1 font-medium">
+              Prepared by experienced educators • Trusted by thousands
+            </p>
+          </div>
+        </div>
+
+        {/* Urgency + Scarcity - Enhanced with Live Counters */}
+        <div className="bg-gradient-to-r from-red-50 to-pink-50 border-2 border-red-300 rounded-lg p-3.5 mb-4 shadow-lg">
+          <div className="flex items-start space-x-2.5">
+            <div className="text-red-600 text-xl flex-shrink-0">⚡</div>
+            <div className="flex-1">
+              <p className="text-sm font-bold text-red-900 mb-2">⏰ Limited Time Access!</p>
+              <div className="space-y-1.5">
+                <p className="text-xs text-gray-700 leading-relaxed">
+                  <strong className="text-red-700">350+ students</strong> purchased quality study materials in last 24 hours
+                </p>
+                <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-red-200">
+                  <span className="text-xs font-semibold text-gray-700">📦 Stock for your branch:</span>
+                  <span className="text-xs font-bold text-red-600">Only 12 left</span>
+                </div>
+                <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-orange-200">
+                  <span className="text-xs font-semibold text-gray-700">👁️ Viewing now:</span>
+                  <span className="text-xs font-bold text-orange-600 transition-all duration-300">{liveViewers} student{liveViewers !== 1 ? 's' : ''}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Selection Process */}
+        <div className="bg-white rounded-xl shadow-lg border border-gray-200">
+          <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-t-xl">
+            <h2 className="text-lg font-bold text-center flex items-center justify-center">
+              <span className="mr-2">📝</span>
+              Select Karo Aur Download Karo
+            </h2>
+            <p className="text-center text-orange-100 text-xs mt-1">
+              2 minutes mein apne important questions pao!
+            </p>
+          </div>
+
+          <div className="p-4 space-y-4">
+            {/* Semester Selection */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                📚 Select Semester *
+              </label>
+              <div className="relative">
+                <select
+                  value={selectedSemester}
+                  onChange={(e) => setSelectedSemester(e.target.value)}
+                  className="w-full p-3 border-2 border-gray-300 rounded-lg appearance-none bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all text-gray-800 font-medium text-sm"
+                >
+                  <option value="">-- Choose Your Semester --</option>
+                  {semesters.map((semester) => (
+                    <option key={semester.id} value={semester.id}>
+                      {semester.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            {/* Branch Selection */}
+            {selectedSemester && (
+              <div className="animate-fadeIn">
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  🎓 Select Branch *
+                </label>
+                <div className="relative">
+                  <select
+                    value={selectedBranch}
+                    onChange={(e) => setSelectedBranch(e.target.value)}
+                    className="w-full p-3 border-2 border-gray-300 rounded-lg appearance-none bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all text-gray-800 font-medium text-sm"
+                  >
+                    <option value="">-- Choose Your Branch --</option>
+                    {branches.map((branch) => (
+                      <option key={branch.id} value={branch.id}>
+                        {branch.name}
+                      </option>
+                    ))}
+                  </select>
+>>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
                 </div>
                 <h3 className="font-bold text-gray-800 mb-2">Premium Guess Papers</h3>
                 <p className="text-gray-600 text-sm">Expertly crafted guess papers with high accuracy</p>
               </div>
+<<<<<<< HEAD
               
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/50 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -301,12 +494,25 @@ function App() {
                     </p>
                   </div>
                 </div>
+=======
+            )}
+
+            {/* Package Selection */}
+            {selectedSemester && selectedBranch && (
+              <div className="animate-fadeIn">
+                <PackageSelector
+                  semester={selectedSemester}
+                  branch={selectedBranch}
+                  onPurchase={handlePurchase}
+                />
+>>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
               </div>
-            </div>
+            )}
           </div>
         </section>
       </main>
 
+<<<<<<< HEAD
       {/* Enhanced Mobile Footer */}
       <footer className="bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 text-white mt-16">
         <div className="container mx-auto px-4 py-8 md:py-12">
@@ -373,13 +579,21 @@ function App() {
         </div>
       </footer>
 
+=======
+>>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
       {showPayment && selectedPackage && (
-        <PaymentModal 
+        <PaymentModal
           package={selectedPackage}
           semester={selectedSemester}
           branch={selectedBranch}
           onClose={handlePaymentClose}
         />
+      )}
+      {showTerms && (
+        <TermsModal onAccept={handleTermsAccept} />
+      )}
+      {showLegal && (
+        <LegalPage onClose={handleLegalClose} />
       )}
     </div>
   );
