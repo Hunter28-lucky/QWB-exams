@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { GraduationCap, FileText, Shield, Star, CheckCircle, ChevronDown, MessageCircle, TrendingUp, Users, Award } from 'lucide-react';
-=======
 import { useState, useEffect } from 'react';
 import { GraduationCap } from 'lucide-react';
->>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
 import Header from './components/Header';
 import PackageSelector from './components/PackageSelector';
 import PaymentModal from './components/PaymentModal';
@@ -25,12 +22,10 @@ function App() {
   const [selectedBranch, setSelectedBranch] = useState<string>('');
   const [selectedPackage, setSelectedPackage] = useState<Package | null>(null);
   const [showPayment, setShowPayment] = useState(false);
-<<<<<<< HEAD
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
-=======
   const [showTerms, setShowTerms] = useState(false);
   const [showLegal, setShowLegal] = useState(false);
   const [liveViewers, setLiveViewers] = useState(3); // Dynamic viewer count
@@ -59,7 +54,6 @@ function App() {
 
     const timer = scheduleNextUpdate();
     return () => clearTimeout(timer);
->>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
   }, []);
 
   const semesters = [
@@ -107,7 +101,6 @@ function App() {
   };
 
   return (
-<<<<<<< HEAD
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/20">
       <Header />
       
@@ -304,7 +297,6 @@ function App() {
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/50 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <FileText className="w-8 h-8 text-white" />
-=======
     <div className="min-h-screen bg-gray-50">
       <Header onLegalClick={handleLegalClick} />
 
@@ -442,12 +434,10 @@ function App() {
                       </option>
                     ))}
                   </select>
->>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
                 </div>
                 <h3 className="font-bold text-gray-800 mb-2">Premium Guess Papers</h3>
                 <p className="text-gray-600 text-sm">Expertly crafted guess papers with high accuracy</p>
               </div>
-<<<<<<< HEAD
               
               <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/50 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -494,7 +484,6 @@ function App() {
                     </p>
                   </div>
                 </div>
-=======
             )}
 
             {/* Package Selection */}
@@ -505,14 +494,12 @@ function App() {
                   branch={selectedBranch}
                   onPurchase={handlePurchase}
                 />
->>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
               </div>
             )}
           </div>
         </section>
       </main>
 
-<<<<<<< HEAD
       {/* Enhanced Mobile Footer */}
       <footer className="bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 text-white mt-16">
         <div className="container mx-auto px-4 py-8 md:py-12">
@@ -579,8 +566,6 @@ function App() {
         </div>
       </footer>
 
-=======
->>>>>>> 4f2c9ea (Add psychology triggers: dynamic live viewers, scarcity counters, price anchoring, color psychology, and professional UI enhancements)
       {showPayment && selectedPackage && (
         <PaymentModal
           package={selectedPackage}
