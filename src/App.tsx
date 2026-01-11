@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GraduationCap } from 'lucide-react';
+import { GraduationCap, FileText, Shield, Star, CheckCircle, ChevronDown, MessageCircle, TrendingUp, Users, Award } from 'lucide-react';
 import Header from './components/Header';
 import PackageSelector from './components/PackageSelector';
 import PaymentModal from './components/PaymentModal';
